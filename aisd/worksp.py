@@ -28,10 +28,38 @@ def insertlast(value, head=head):
     while last.next != None:
         last = last.next
     last.next = Elem(value, None)
-    
+
+def insertlast2(value,head=head,tail=None):
+    if head==None:
+        head=Elem(value,None)
+        tail = head
+        return
+    tail.next =Elem(value,None)
+    tail = tail.next
+
 def insertmiddle(value,index=1):
     pass
 
+def delfirst():
+    if head==None: return
+    p = head
+    head=head.next
+    return p
+
+def delmax(head=head):
+    prev = head
+    curr = head.next
+    M = prev.value
+    pMax = curr
+    
+    while curr != None:
+        
+        if curr.value > M:
+            pMax = curr
+        
+        
+        prev=curr
+        curr = curr.next
 #%%
 a = Elem(100)
 b = Elem(200, a)
