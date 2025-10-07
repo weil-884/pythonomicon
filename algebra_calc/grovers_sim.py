@@ -1,6 +1,7 @@
 # %%
 import matplotlib.pyplot as plt
 import numpy as np
+<<<<<<< HEAD
 from qiskit import QuantumCircuit
 from qiskit_ibm_runtime import QiskitRuntimeService, SamplerV2 as Sampler
 from qiskit_aer import Aer
@@ -58,3 +59,6 @@ job = sampler.run([grover_circuit])
 results = job.result()
 
 plot_histogram(results.get_counts(grover_circuit))
+=======
+import qiskit as q
+>>>>>>> efd3e822df3ec5a3761728b68a594214429fec6d
