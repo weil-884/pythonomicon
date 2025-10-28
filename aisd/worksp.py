@@ -68,3 +68,14 @@ head = c
 
 head = insertfront(400, c)
 printall(head)
+
+
+#%%
+#=================================================================
+# Słowniki
+
+def search(v):
+    p = head
+    while p != None and p.val != v:
+        p=p.next
+    return p
